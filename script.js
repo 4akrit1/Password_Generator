@@ -102,4 +102,8 @@ function copyPassword() {
 // Event Listeners
 generateBtn.addEventListener('click', generatePassword);
 copyBtn.addEventListener('click', copyPassword);
-checkStrengthBtn.addEventListener('click', checkPasswordStrength);
+checkStrengthBtn.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent form submission and page reload
+    checkPasswordStrength();
+});
+
