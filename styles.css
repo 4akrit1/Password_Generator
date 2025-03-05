@@ -11,9 +11,7 @@ body {
     text-align: center;
     padding: 50px;
     margin: 0;
-  
 }
-
 
 .main-container {
     display: flex;
@@ -68,6 +66,12 @@ h1 {
     color: #fff;
     text-align: center;
     border-radius: 5px;
+    outline: none; /* Remove outline to prevent default focus highlight */
+}
+
+.output-container input:focus {
+    background-color: #444; /* Slightly lighter background on focus */
+    border-color: #007BFF; /* Change border color on focus */
 }
 
 .output-container button {
@@ -167,6 +171,7 @@ label {
     border: 2px solid #007BFF;
     box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
+
 /* Style the input and error messages */
 input:invalid {
     border-color: red;
