@@ -8,45 +8,43 @@
 </head>
 <body>
     <div class="main-container">
-      <!-- Password Generator Section -->
-<div class="container generator-container">
-    <h1>Password Generator 🔐</h1>
+        <!-- Password Generator Section -->
+        <div class="container generator-container">
+            <h1>Password Generator 🔐</h1>
 
-    <div class="output-container">
-        <input type="text" id="password" readonly>
-        <button id="copy-btn">Copy</button>
-    </div>
+            <div class="output-container">
+                <input type="text" id="password" readonly>
+                <button id="copy-btn">Copy</button>
+            </div>
 
-    <label for="length">Password Length:</label>
-    <input type="number" id="length" min="6" max="32" value="12">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" min="6" max="32" value="12">
 
-    <div class="options">
-        <label><input type="checkbox" id="include-uppercase" checked> Uppercase</label>
-        <label><input type="checkbox" id="include-lowercase" checked> Lowercase</label>
-        <label><input type="checkbox" id="include-numbers" checked> Numbers</label>
-        <label><input type="checkbox" id="include-special" checked> Symbols</label>
-    </div>
+            <div class="options">
+                <label><input type="checkbox" id="include-uppercase" checked> Uppercase</label>
+                <label><input type="checkbox" id="include-lowercase" checked> Lowercase</label>
+                <label><input type="checkbox" id="include-numbers" checked> Numbers</label>
+                <label><input type="checkbox" id="include-special" checked> Symbols</label>
+            </div>
 
-    <button id="generate-btn">Generate Password</button>
+            <button id="generate-btn">Generate Password</button>
 
-    <div class="strength-meter">
-        <p>Password Strength: <span id="strength-text-generator">❓</span></p> <!-- Changed here -->
-    </div>
-</div>
-
-<!-- Password Strength Checker Section -->
-<div class="container strength-container">
-    <h1>Password Strength Checker</h1>
-    <form id="password-form">
-        <input type="text" id="password-to-check" placeholder="Enter your password" required>
-        <button id="check-strength-btn" type="submit">Check Strength</button>
-        <div class="strength-meter">
-            <p>Password Strength: <span id="strength-text-checker">❓</span></p>
+            <div class="strength-meter">
+                <p>Password Strength: <span id="strength-text-generator">❓</span></p>
+            </div>
         </div>
-    </form>
-</div>
 
-        
+        <!-- Password Strength Checker Section -->
+        <div class="container strength-container">
+            <h1>Password Strength Checker</h1>
+            <form id="password-form">
+                <input type="text" id="password-to-check" placeholder="Enter your password" required>
+                <button id="check-strength-btn" type="submit">Check Strength</button>
+                <div class="strength-meter">
+                    <p>Password Strength: <span id="strength-text-checker">❓</span></p>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
